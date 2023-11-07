@@ -5,7 +5,7 @@
   actual performance in practice.
 
   1. Analysis ignores constants
-  2. Only true until you reach a certain input size
+  2. Only true after a certain input size - $\forall n \geq n_0$
   3. The analysis can sometimes not be representatitve of how the algorithm actually grows
   in practice - $\Omega$(1) will be true for everything, but that won't actually tell
   you anything about the algorithm
@@ -29,11 +29,11 @@
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-  1. Hardware - could have run the program on a computer that did not have much
-  processing power
+  1. Could have run the program on a different computer than used in the first
+  part, potentially one with less processing power
   2. Other processes in background could have effected run time by diverting
-  resources away from the program
-  3. Analysis assumes all operations take same amount of time - the program could
-  include operations that taken longer to operate
+  resources away from the program, that were not running during the first part
+  3. Doesn't say if any alterations were made to the program, such as changing the
+  operations, that would increase the runtime
 
 Add your answers to this markdown file.
